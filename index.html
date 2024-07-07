@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Web App</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.socket.io/4.0.1/socket.io.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="chat.js"></script>
+</head>
+
+<body class="bg-gray-100 h-screen flex flex-col">
+
+    <!-- Header -->
+    <header class="bg-blue-600 text-white py-4 px-6 w-full">
+        <h1 class="text-2xl">Chat App</h1>
+    </header>
+    
+
+    <div id="modal" class="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center hidden">
+        <div class="bg-white p-6 rounded-lg max-w-lg mx-auto relative">
+            <button onclick="toggleModal()" class="absolute top-4 right-4 text-gray-600">&times;</button>
+            <h2 class="text-2xl mb-4">Select a GIF</h2>
+            <div id="gif-container" class="grid grid-cols-2 gap-4">
+                <!-- GIFs will be inserted here dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Chat Container -->
+    <div id="chat-container" class="flex-1 overflow-y-auto p-6 w-full">
+        <div id="messages" class="space-y-4">
+            <!-- Chat messages will be appended here -->
+        </div>
+    </div>
+
+    <!-- Input Area -->
+    <div class="bg-white p-4 border-t border-gray-200 w-full">
+        <div class="flex space-x-2">
+            <input id="message-input" type="text" class="flex-1 border rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-600" placeholder="Type your message here...">
+            <button id="send-button" class="bg-blue-600 text-white rounded-lg p-2 px-4" onclick="sendMessage()">Send</button>
+            <button id="media-button" class="bg-green-600 text-white rounded-lg p-2 px-4" onclick="toggleGifSearch()">GIF</button>
+        </div>
+    </div>
+
+</body>
+</html>
