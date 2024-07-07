@@ -1,17 +1,22 @@
 
 Chat Application
+
 This is a simple chat application built using Python Socket.IO and Flask for the backend, and HTML, Tailwind CSS, and jQuery for the frontend. The application allows users to send text messages and GIFs (via the Tenor GIF API) in real-time.
 
 Features
+
 Real-time chat messaging
 GIF support via Tenor GIF API
 Responsive design for both PC and mobile
 Notification for new users joining the chat
 Screenshots
 PC View
+
 ![alt text](/screenshots/3.png)
 Mobile View
+
 ![alt text](/screenshots/2.jpeg) ![alt text](/screenshots/1.jpeg)
+
 Installation
 Clone the repository:
 
