@@ -44,4 +44,3 @@ Contributions are welcome! Please fork the repository and submit a pull request 
 
 # Contact
 ## For any inquiries, please contact [amitbandekar419@gmai.com].
-ScreenShots 
