@@ -42,9 +42,6 @@ Use the GIF button to search and send GIFs via the Tenor API.
 # Contributing
 Contributions are welcome! Please fork the repository and submit a pull request for any features, bug fixes, or enhancements.
 
-# License
-This project is licensed under the MIT License. See the LICENSE file for more details.
-
 # Contact
 ## For any inquiries, please contact [amitbandekar419@gmai.com].
 ScreenShots 
